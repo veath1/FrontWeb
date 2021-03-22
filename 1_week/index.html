@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Input</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="#" method="GET">
+        <input type="text" placeholder="이름을 입력해주세요" minlength="5" required >
+        <input type="password" placeholder="비밀번호을 입력해주세요" minlength="5">
+        <input type="email" placeholder="이메일을 입력해주세요" required>
+        <input type="url" placeholder="url 주소을 입력해주세요" required>
+        <input type="number" placeholder="전화번호을 입력해주세요" required>
+        <form action="" method="GET">        
+            <input type="radio" id="subscribed" name="subscription">
+            <label for="subscription">구독 중</label>
+            <input type="radio" id="unsubscribed" name="unsubscription">
+            <label for="unsubscription">미구독</label>
+        </form>
+        <div>        
+            <input type="checkbox" id='html'>
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id='css'>
+            <label for="css">css</label>
+            <input type="checkbox" id='js'>
+            <label for="js">js</label>
+            
+        </div>
+        <div>
+            <select name="skill">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">전송</button>
+            <button type="reset">리셋</button>
+            
+        </div>
+        <input type="file" accept=".png">
+        <input type="submit">
+    </form>
+</body>
+</html>
